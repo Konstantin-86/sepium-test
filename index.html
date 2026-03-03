@@ -1,27 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>sepium-test</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <div class="container">
-            <h1 class="page-title">Наши кухни</h1>
-            <div class="products-grid" id="products-container"></div>
+      <div class="container">
+        <div class="card">
+          <div class="card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-zoom">
+                  <svg width="18" height="18" viewBox="0 0 18 18">
+                    <use href="icons/sprite.svg#icon-zoom"></use>
+                  </svg>
+                </div>
+                <img src="./images/kitchen-1-1.png" alt="Кухня вид 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/kitchen-1-2.png" alt="Кухня вид 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/kitchen-1-3.png" alt="Кухня вид 3" />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="card__article">Артикул — 4607</div>
+          <div class="card__title">
+            Угловая бежевая кухня на заказ с матовыми фасадами в современном
+            стиле «Нарцисс»
+          </div>
+          <div class="card__mod-list">
+            <input
+              type="radio"
+              name="mod"
+              id="mod1"
+              class="card__mod-radio"
+              checked
+            />
+            <label for="mod1" class="card__mod-item">
+              <svg
+                class="card__mod-icon"
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+              >
+                <use href="icons/sprite.svg#icon-check"></use>
+              </svg>
+              ПВХ
+            </label>
+
+            <input type="radio" name="mod" id="mod2" class="card__mod-radio" />
+            <label for="mod2" class="card__mod-item">
+              <svg
+                class="card__mod-icon"
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+              >
+                <use href="icons/sprite.svg#icon-check"></use>
+              </svg>
+              Эмаль
+            </label>
+
+            <input type="radio" name="mod" id="mod3" class="card__mod-radio" />
+            <label for="mod3" class="card__mod-item">
+              <svg
+                class="card__mod-icon"
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+              >
+                <use href="icons/sprite.svg#icon-check"></use>
+              </svg>
+              Пластик
+            </label>
+
+            <input type="radio" name="mod" id="mod4" class="card__mod-radio" />
+            <label for="mod4" class="card__mod-item">
+              <svg
+                class="card__mod-icon"
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+              >
+                <use href="icons/sprite.svg#icon-check"></use>
+              </svg>
+              Массив
+            </label>
+          </div>
+          <div class="card__price">
+            <div class="card__price-value">
+              <p class="card__price-value-text">Цена от</p>
+              <p class="card__price-value-number">515 700 ₽</p>
+              <div class="card__price-meter">
+                <p class="card__price-meter-text">Погонный метр от —</p>
+                <p class="card__price-meter-number">30 000 ₽</p>
+              </div>
+            </div>
+            <button class="card__buy-btn">Заказать</button>
+          </div>
+          <div class="card__footer">
+            <div class="footer__like">
+              <svg class="like-icon" width="50" height="50">
+                <use href="icons/sprite.svg#icon-like"></use>
+              </svg>
+
+              <p class="card__like-number">57</p>
+            </div>
+            <button class="card__btn">Рассчитать стоимость</button>
+          </div>
+          <svg class="arrow-icon">
+            <use href="icons/sprite.svg#icon-arrow-r"></use>
+          </svg>
         </div>
+      </div>
     </main>
 
-    <script src="./js/data.js"></script>
-    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>
